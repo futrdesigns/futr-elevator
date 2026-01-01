@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="background: transparent !important;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTR Elevator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: transparent !important;">
+    <div id="elevator-panel">
+        <div class="panel-header">
+            <div class="building-icon" id="buildingIcon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L4 7V17L12 21L20 17V7L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 21V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 7L12 11L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 9.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M16 9.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="building-name" id="buildingName"></div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span class="status-text">READY</span>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="current-floor-display">
+            <span class="label">CURRENT LOCATION</span>
+            <span class="current-floor" id="currentFloor"></span>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="floors-container" id="floorsContainer"></div>
+        
+        <div class="panel-footer">
+            <button class="close-button" id="closeButton">
+                <span>CANCEL</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="glow-effect"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
